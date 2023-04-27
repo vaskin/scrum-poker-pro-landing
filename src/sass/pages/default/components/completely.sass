@@ -1,0 +1,101 @@
+.completely
+  margin-bottom: 105px
+  +r($tablet)
+    margin-bottom: 64px
+
+.completely__content
+  @extend .direct__content
+  margin-left: 0
+  margin-right: 150px
+  +r(998)
+    margin-right: 73px
+
+.completely
+  .direct__img
+    +r(998)
+      max-width: 204px
+      width: 100%
+  .direct__inner
+    +r(658)
+      flex-direction: column
+
+.completely__block
+  background: $white
+  border-radius: 16px
+  border: 2px solid #BFBFBF
+  max-width: 312px
+  width: 100%
+  padding: 16px 15px 27px
+  +r(658)
+    max-width: 100%
+
+.completely__block-title
+  text-align: center
+  color: black
+  width: 100%
+  text-transform: none
+  max-width: 172px
+  font-weight: 900
+  line-height: 42/28+em
+  font-size: 28px
+  margin: 0 auto 24/28+em
+  span
+    display: block
+    color: $orange
+  +r(468)
+    font-size: 18px
+
+.completely__block-items
+  display: flex
+  flex-direction: column
+  +r(658)
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    column-gap: 8px
+    row-gap: 8px
+
+.completely__block-item
+  background: #F5F5F5
+  border-radius: 8px
+  width: 230px
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 48px
+  margin: 0 auto 12px
+  font-size: 18px
+  line-height: 24/18+em
+  +r(658)
+    width: 100%
+    margin-bottom: 0
+  +r(468)
+    font-size: 12px
+    height: 36px
+  &:last-child
+    grid-column-start: span 2
+    margin-bottom: 0
+  .infinity
+    width: 16px
+    height: 8px
+    margin-right: 16px
+    +r(468)
+      margin-right: 8px
+
+.completely__block-info
+  margin-top: 32px
+  +r(658)
+    display: flex
+    justify-content: space-between
+    align-items: center
+  +r(468)
+    .button
+      font-size: 12px
+
+.completely__block-price
+  text-align: center
+  color: $orange
+  font-size: 44px
+  line-height: 66/44+em
+  font-weight: 900
+  +r(468)
+    font-size: 32px

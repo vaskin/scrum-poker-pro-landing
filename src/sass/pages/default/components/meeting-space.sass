@@ -1,0 +1,97 @@
+.meeting-space
+  background-color: $lightWhite
+  padding-top: 32px
+  position: relative
+  padding-bottom: 96px
+  +r(998)
+    padding-bottom: 64px
+    padding-top: 0
+
+.meeting-space__content
+  background: radial-gradient(107.02% 98.65% at 100% 0%, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0) 100%), #FD7E50
+  border-radius: 32px
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 19px 15px 33px
+  .text, .direct__title
+    color: $white
+  .button.white
+    border-color: transparent
+    color: $black
+  +r(998)
+    border-radius: 0
+    margin: 0px -20px
+    padding: 35px 20px
+  +r(658)
+    flex-direction: column-reverse
+
+.meeting-space__start
+  position: absolute
+  &[data-star]
+    mix-blend-mode: multiply
+  &[data-star='0']
+    left: 75/1920*100%
+    top: 133px
+    svg
+      width: 105px
+      height: 105px
+      fill: $gray
+      opacity: .1
+      transform: rotate(-27.88deg)
+  &[data-star='1']
+    left: 112/1920*100%
+    top: 364px
+    svg
+      width: 76px
+      height: 76px
+      fill: $gray
+      opacity: .1
+      transform: rotate(39.32deg)
+  &[data-star='2']
+    right: 150/1920*100%
+    top: 121px
+    svg
+      width: 79px
+      height: 79px
+      fill: $gray
+      opacity: .1
+      transform: rotate(-28.43deg)
+  &[data-star='3']
+    right: 220/1920*100%
+    top: 228px
+    svg
+      width: 98px
+      height: 98px
+      fill: $gray
+      opacity: .1
+      transform: rotate(-46.1deg)
+  &[data-star='4']
+    right: 50/1920*100%
+    top: 352px
+    svg
+      width: 122px
+      height: 122px
+      fill: $gray
+      opacity: .1
+      transform: rotate(32.4deg)
+  &[data-star='5']
+    left: 297/1920*100%
+    top: 351px
+    svg
+      width: 56px
+      height: 56px
+      fill: $gray
+      opacity: .1
+      transform: rotate(124.48deg)
+
+.meeting-space__img
+  +r($wide)
+    max-width: 345px
+    width: 100%
+    margin-right: 20px
+  +r(658)
+    margin-right: 0
+
+.meeting-space__text
+  opacity: .75

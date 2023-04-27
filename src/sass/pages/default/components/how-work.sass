@@ -1,0 +1,77 @@
+.how-work
+  margin-bottom: 64px
+  margin-top: 30px
+  +r($tablet)
+    margin-bottom: 32px
+  +r($mobile)
+    margin-bottom: 24px
+
+.how-work__inner
+  display: flex
+  +r(1255)
+    flex-direction: row-reverse
+    justify-content: space-between
+  +r(685)
+    flex-direction: column-reverse
+
+.how-work__content
+  margin-left: 81px
+  padding-top: 25px
+  +r(1255)
+    margin-left: 0
+    margin-right: 20px
+  +r(998)
+    max-width: 310px
+  +r(685)
+    margin-bottom: 10px
+    max-width: 100%
+    margin-left: 0
+
+.how-work__img
+  +r(768)
+    margin-right: -97/470*100%
+  +r(685)
+    margin-right: 0px
+
+.how-work__title
+  margin-bottom: 1em
+
+.how-work__text
+  max-width: 470px
+  width: 100%
+
+.how-work__list
+  padding-left: 16px
+  border-left: 1px solid $orange
+  margin-top: 16px
+
+.how-work__list-item
+  display: flex
+  align-items: center
+  margin-bottom: 13px
+  font-size: 18/16+em
+  color: $textColor
+  font-weight: bold
+  +r($tablet)
+    font-size: 16px
+  &:last-child
+    margin-bottom: 0
+  svg
+    fill: $darkOrange
+  .door-open
+    width: 15px
+    height: 20px
+  .message
+    width: 21px
+    height: 21px
+  .meeting
+    width: 18px
+    height: 22px
+
+.how-work__icon
+  width: 24px
+  height: 24px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-right: 8px

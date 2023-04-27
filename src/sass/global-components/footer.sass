@@ -1,0 +1,151 @@
+.footer
+  background-color: $lightWhite
+  padding-bottom: 65px
+  +r($mobile)
+    padding-bottom: 85px
+
+.footer__items
+  display: flex
+  margin-left: -134px
+  +r(998)
+    margin-left: 0
+  +r($mobile)
+    flex-direction: column
+    margin-left: 0
+
+
+.footer__item
+  max-width: 470px
+  width: 100%
+  margin-left: 134px
+  .text.footer__text:last-child
+    margin-bottom: 0
+  +r(998)
+    margin-left: 20px
+    max-width: 100%
+    flex: 1 1 0
+  +r($mobile)
+    margin-left: 0
+    flex: 1
+    margin-bottom: 48px
+    &:last-child
+      margin-bottom: 0
+
+.footer__title
+  margin-bottom: 32/24+em
+
+.footer__text
+  margin-bottom: 27/18+em
+
+.footer__list
+  display: flex
+
+.footer__list-item
+  margin-left: 24px
+  &:first-child
+    margin-left: 0
+
+.footer__list-link
+  width: 48px
+  height: 48px
+  border-radius: 50%
+  background-color: $orange
+  display: flex
+  justify-content: center
+  align-items: center
+  svg
+    fill: $white
+    width: 18px
+    height: 18px
+
+.footer__item-bottom
+  display: flex
+  align-items: center
+
+.footer__link
+  color: $textColor
+  font-size: 18/16+em
+  margin-left: 8px
+  line-height: 27/18+em
+  +r($mobile)
+    margin-left: 0
+
+.footer__bottom
+  margin-top: 32px
+  @extend .footer__items
+  +r(998)
+    flex-direction: column
+    margin-left: 0
+    align-items: center
+
+.footer__bottom-item
+  max-width: 470px
+  width: 100%
+  align-items: center
+  margin-left: 134px
+  display: none
+  +r(992)
+    display: flex
+    margin-left: 0
+    margin-bottom: 24px
+    &:last-child
+      margin-bottom: 0
+  +r($mobile)
+    flex-direction: column
+
+.footer__socials
+  +r($mobile)
+    margin-bottom: 16px
+
+.footer__faq
+  width: 100%
+  .footer__list
+    justify-content: space-between
+    display: flex
+    +r($mobile)
+      flex-direction: column
+      align-items: center
+  .footer__list-item
+    margin-left: 0
+    +r($mobile)
+      margin-bottom: 16px
+      &:last-child
+        margin-bottom: 0
+    .footer__link
+      margin-left: 0
+
+.footer__title
+  font-weight: 900
+  font-size: 21px
+  line-height: 150%
+  text-transform: uppercase
+  color: #0F1322
+
+.footer__top
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  grid-column-gap: 130px
+  +r(1080)
+    grid-column-gap: 20px
+  +r(648)
+    grid-template-columns: repeat(1, 1fr)
+    grid-row-gap: 48px
+    .footer__text
+      margin-bottom: 0
+  & > div
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  .footer__bottom-item
+    display: flex
+    margin-left: 0
+    +r(992)
+      display: none
+
+.footer__text
+  font-size: 16px
+  line-height: 150%
+  color: #2F323C
+
+.right
+  padding-bottom: 10px

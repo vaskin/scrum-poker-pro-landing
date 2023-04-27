@@ -1,0 +1,17 @@
+.link
+  color: $orange
+  line-height: 27/18+em
+  font-size: 18/16+em
+  font-weight: 700
+  position: relative
+  transition: opacity .3s linear
+  &:hover
+    opacity: .7
+  &::after
+    content: ""
+    position: absolute
+    left: 0
+    width: 100%
+    bottom: 6px
+    height: 1px
+    background-color: $orange

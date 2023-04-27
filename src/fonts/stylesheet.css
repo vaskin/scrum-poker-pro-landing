@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'RaptorV3Premium-Regular';
+    src: url('RaptorV3Premium-Regular.woff2') format('woff2'),
+        url('RaptorV3Premium-Regular.woff') format('woff'),
+        url('RaptorV3Premium-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RaptorV3Premium-Light';
+    src: url('RaptorV3Premium-Light.woff2') format('woff2'),
+        url('RaptorV3Premium-Light.woff') format('woff'),
+        url('RaptorV3Premium-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RaptorV3Premium-Black';
+    src: url('RaptorV3Premium-Black.woff2') format('woff2'),
+        url('RaptorV3Premium-Black.woff') format('woff'),
+        url('RaptorV3Premium-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RaptorV3Premium-Bold';
+    src: url('RaptorV3Premium-Bold.woff2') format('woff2'),
+        url('RaptorV3Premium-Bold.woff') format('woff'),
+        url('RaptorV3Premium-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,127 @@
+.sprint-planing__title
+  text-align: center
+  max-width: 970px
+  width: 100%
+  margin: 0 auto 24px
+
+.sprint-planing__text
+  font-size: 18px
+  text-align: center
+  margin-bottom: 32px
+
+.sprint-planing__slider
+  margin-bottom: 98px
+  background: radial-gradient(107.02% 98.65% at 100% 0%, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0) 100%), #FD7E50
+  border-radius: 32px
+  height: 490px
+  position: relative
+  padding-top: 48px
+  +r(992)
+    padding-bottom: 40px
+    height: auto
+  +r(568)
+    padding: 20px 10px 40px
+    border-radius: 0
+    margin: 0 -20px 98px
+.sprint-planing__slider-wrapper
+  .swiper-button-next,.swiper-button-prev
+    top: 50%
+    width: 54px
+    height: 54px
+    transform: translateY(-50%)
+    border-radius: 50%
+    background-color: #FD7E50
+    +r(768)
+      width: 32px
+      height: 32px
+      top: 103%
+  .swiper-button-next
+    right: 0
+    left: auto
+    z-index: 100
+
+  .swiper-pagination
+    padding-left: 100px
+    left: auto
+    width: auto
+    +r(992)
+      padding-left: 0
+      right: 40px
+      bottom: 60px
+    +r(768)
+      left: 0
+      width: 100%
+      right: auto
+      bottom: -30px
+    .swiper-pagination-bullet
+      width: 32px
+      height: 4px
+      border-radius: 0
+      background-color: #fff
+      opacity: .32
+      +r(768)
+        background-color: #FD7E50
+      &.swiper-pagination-bullet-active
+        background-color: #fff
+        opacity: 1
+        +r(768)
+          background-color: #FD7E50
+
+.sprint-planing__slider-item
+  padding-left: 100px
+  display: flex
+  justify-content: space-between
+  overflow: hidden
+  +r(992)
+    padding: 0 40px
+  +r(768)
+    flex-direction: column
+    padding: 0 10px
+.sprint-planing__slider-left
+  max-width: 470px
+  width: 100%
+  +r(992)
+    margin-top: 15px
+    max-width: 100%
+
+.sprint-planing__slider-text
+  color: #fff
+  font-size: 18px
+  margin-bottom: 4px
+  opacity: 0.9
+  line-height: 150%
+  +r(568)
+    font-size: 16px
+
+.sprint-planing__slider-title
+  color: #ffffff
+  font-weight: 900
+  font-size: 23px
+  text-transform: uppercase
+  max-width: 370px
+  margin-bottom: 24px
+  +r(992)
+    max-width: 100%
+  +r(568)
+    font-size: 28px
+
+.sprint-planing__slider-btn
+  margin-top: 58px
+  +r(568)
+    margin-top: 42px
+
+.sprint-planing__slider-image
+  +r(992)
+    height: 400px
+    width: auto
+    margin: 0 auto
+  +r(768)
+    margin-top: 32px
+    width: 100%
+    height: auto
+
+.sprint-planing__slider-image-wrapper
+  overflow: hidden
+
+.sprint-planing__slider-wrapper
+  position: relative

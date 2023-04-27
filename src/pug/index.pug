@@ -1,0 +1,156 @@
+extends shared/_layout
+
+block vars
+  - var title = 'ScrumPokerPro - Free tool for online sprint planning and retrospective'
+  - var bodyClass = ''
+  - var lan = 'en'
+
+block content
+  section.intro
+    - for(var i = 0; i < 10; i++)
+      .intro__star(data-star=i)
+        +icon('star')
+    .intro__round
+    .container
+      .intro__inner
+        .intro__content-wrapper
+          h1.title.intro__title Scrum tools for distributed and remote teams
+          p.text Planning. Estimation. Retrospective.
+          .intro__description
+            p.text We know how to make your processes better. Plan with ScrumPokerPro. NO trial period or limitations - it's free.
+          a.button.icon(href='https://space.scrumpokerpro.com/')
+            span Start right now
+            img(src='img/intro/group.svg' alt='scrum team' title='Scrum team')
+        picture
+          .intro__round
+          source(media="(min-width: 1250px)" srcset='img/intro/dashboard.svg')
+          source(media="(max-width: 568px)" srcset='img/intro/dashboard.svg')
+          source(media="(max-width: 1250px)" srcset='img/intro/dashboardMobile.svg')
+          img.intro__dashboard(src="img/intro/dashboard.svg" alt="scrum board" title="Scrum board")
+  section.how-work
+    .container
+      .how-work__inner
+        img.how-work__img(src='img/how-work/cards.svg' alt='scrum poker cards' title='Scrum poker cards')
+        .how-work__content
+          h2.title.medium.how-work__title HOW IT WORKS?
+          p.text.how-work__text Register or login with Google, GitHub, GitLab, LinkedIn and Facebook. Choose poker planning or retrospective meeting. Invite your teammates via link or send email. Import issues from Jira or create issue manually. Vote for issue and synchronize with Jira.
+          ul.how-work__list
+            li.how-work__list-item
+              .how-work__icon
+                +icon('door-open')
+              | Create meeting
+            li.how-work__list-item
+              .how-work__icon
+                +icon('message')
+              | Invite participants
+            li.how-work__list-item
+              .how-work__icon
+                +icon('meeting')
+              | Plan and estimate
+  section.features
+    - for(var i = 0; i < 4; i++)
+      .features__star(data-star=i)
+        +icon('star')
+    .container
+      h2.title.medium.features__title Features that will make you flip
+      .features__items
+        article.features__item
+          .features__item-img
+            img(src='img/features/free.svg' alt='free poker planning' title='Free poker planning and retrospective')
+          h3.title.features__item-title Absolutely free
+
+        article.features__item
+          .features__item-img
+            img(src='img/features/integration.svg' alt='sprint planning jira integration' title='Sprint planning jira integration')
+          h3.title.features__item-title Integration with jira
+
+        article.features__item
+          .features__item-img
+            img(src='img/features/dashboard.svg' alt='sprint retrospective' title='Sprint retrospective tool')
+          h3.title.features__item-title Simple and convenient tools
+      .button-wrapper
+        a.button.icon(href='https://space.scrumpokerpro.com/')
+          span Start meeting
+          img(src='img/intro/group.svg' alt='group')
+  section.direct
+    .container
+      .direct__inner
+        img.direct__img(src='img/direct/example.png' alt='import issues from jira' title='Import issues from jira')
+        .direct__content
+          p.text Working with tasks from jira directly
+          h2.title.medium.direct__title Direct integration of tasks with Jira
+          p.text.direct__text Import issue you want to evaluate from the backlog with a quick search and synchronisation of Story Points.
+          a.link(href='https://space.scrumpokerpro.com/') Try for free
+
+  section.sprint-planing
+    .container
+      h2.title.medium.sprint-planing__title SIMPLE AND EASY-TO-USE APPLICATION FOR PLANNING POKER AND SPRINT RETROSPECTIVE ONLINE
+      p.text.sprint-planing__text Agile ceremonies are important part of development process. Look for ways to solve the problem of a distributed team so that the processes take the same amount of time as if the team were sitting in one office.
+      .sprint-planing__slider-wrapper
+        .swiper.sprint-planing__slider
+          .swiper-wrapper
+            .swiper-slide
+              .sprint-planing__slider-item
+                .sprint-planing__slider-left
+                  p.sprint-planing__slider-text ScrumPokerPro
+                  h3.sprint-planing__slider-title Planning Poker
+                  p.sprint-planing__slider-text Planning poker is a consensus-based estimating technique for Agile teams. Create issues, during the planning of which you can determine the amount of work to be performed. Involve all team members in the discussion of the complexity of the features and make the assessment more transparent for everyone.
+                  a.button.white.sprint-planing__slider-btn(href='https://space.scrumpokerpro.com/') Try it for free
+                .sprint-planing__slider-image-wrapper
+                  img.sprint-planing__slider-image(src='/img/sprint-planing/slide-1.png' alt='sprint planning poker' title='Sprint planning poker')
+            .swiper-slide
+              .sprint-planing__slider-item
+                .sprint-planing__slider-left
+                  p.sprint-planing__slider-text ScrumPokerPro
+                  h3.sprint-planing__slider-title Sprint Retrospective
+                  p.sprint-planing__slider-text Use the method of studying previous experience by analyzing the achieved and missed goals, means, structure, reasons. Retrospective app with sticker likes allow your team and product owner to discuss the highlights.
+                  a.button.white.sprint-planing__slider-btn(href='https://space.scrumpokerpro.com/') Try it for free
+                .sprint-planing__slider-image-wrapper
+                  img.sprint-planing__slider-image(src='/img/sprint-planing/slide-2.png' alt='sprint retro' title='Sprint retro')
+        .swiper-pagination
+        .swiper-button-next
+          svg(width='24' height='24' viewbox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+            path(d='M13 19L20 12L13 5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+            path(d='M20 12L4 12' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+        .swiper-button-prev
+          svg(width='24' height='24' viewbox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+            path(d='M11 5L4 12L11 19' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+            path(d='M4 12H20' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+
+  section.completely
+    .container
+      .direct__inner
+        .completely__content
+          p.text Free of charge
+          h2.title.medium.direct__title Completely free to use for all users
+          p.text.direct__text We believe that basic functionality must be free for development teams.
+          a.link(href='https://space.scrumpokerpro.com/') Register for free
+        .completely__block
+          h2.completely__block-title Free <span>planning</span>
+          .completely__block-items
+            .completely__block-item
+              +icon('infinity')
+              p Unlimited seats
+            .completely__block-item
+              +icon('infinity')
+              p Unlimited votes
+            .completely__block-item
+              +icon('infinity')
+              p Unlimited meetings
+          .completely__block-info
+            p.completely__block-price $0
+            .button-wrapper
+              a(href='https://space.scrumpokerpro.com/').button Create account
+  section.meeting-space
+    - for(var i = 0; i < 6; i++)
+      .meeting-space__start(data-star=i)
+        +icon('star')
+    .container
+      .meeting-space__content
+        img.meeting-space__img(src='img/meeting-space/together.svg' alt='online scrum tools' title='Online scrum tools')
+        .direct__content
+          p.text.meeting-space__text Manage distributed teams
+          h2.title.medium.direct__title Come together in a virtual meeting space
+          p.text.direct__text.meeting-space__text Communicate and collaborate without the constraints of physical location through ScrumPokerPro tools.
+          a.button.white(href='https://space.scrumpokerpro.com/') Start meeting
+

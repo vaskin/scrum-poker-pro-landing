@@ -1,0 +1,50 @@
+.direct
+  background-color: $lightWhite
+  padding-bottom: 32px
+  margin-bottom: 64px
+  +r(658)
+    margin-bottom: 24px
+    padding-bottom: 24px
+
+.direct__inner
+  display: flex
+  align-items: center
+  +r(658)
+    align-items: flex-start
+    flex-direction: column-reverse
+
+.direct__content
+  margin-left: 57px
+  +r(768)
+    max-width: 42%
+    margin-left: 20px
+  +r(658)
+    width: 100%
+    max-width: 100%
+    margin-bottom: 16px
+    margin-left: 0
+
+.direct__title
+  margin-top: 4/32+em
+  max-width: 470px
+  margin-bottom: 20/32+em
+  +r(658)
+    width: 100%
+    max-width: 100%
+
+.direct__text
+  max-width: 470px
+  margin-bottom: 16/18+em
+  +r(658)
+    margin-bottom: 48px
+    max-width: 100%
+
+.direct__img
+  max-width: 516px
+  width: 100%
+  height: auto
+  +r(658)
+    align-self: center
+  +r($mobile)
+    max-width: 100% !important
+    width: 100%

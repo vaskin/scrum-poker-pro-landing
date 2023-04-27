@@ -1,0 +1,28 @@
+.button
+  background-color: $orange
+  border-radius: 8px
+  color: $white
+  font-size: 18/16+em
+  line-height: 27/18+em
+  font-weight: 700
+  padding: 10px 31px
+  border: 2px solid transparent
+  transition: opacity .3s linear
+  +r($wide)
+    font-size: 16px
+  &.white
+    background-color: $white
+    color: $purple
+    border-color: $lightGray
+  &.icon
+    display: inline-flex
+    align-items: center
+    svg, img
+      display: block
+      margin-left: 16px
+  &:hover
+    opacity: .7
+.button-wrapper
+  text-align: center
+  &.right
+    text-align: right
